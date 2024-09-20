@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+	<title>Животные</title>
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="container  my-3">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'main/img/giraf.jpg' %}" class="card-img-top" alt="giraf">
+              <div class="card-body">
+                <h5 class="card-title">ЖИРАФ</h5>
+                <p class="card-text">Имеет длинную шею и пятна на теле</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'main/img/slon.jpg' %}" class="card-img-top" alt="slon">
+              <div class="card-body">
+                <h5 class="card-title">СЛОН</h5>
+                <p class="card-text">Большие уши, большое тело. Слон большой</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'main/img/zebra.jpg' %}" class="card-img-top" alt="zebra">
+              <div class="card-body">
+                <h5 class="card-title">ЗЕБРА</h5>
+                <p class="card-text">Черная полоска, белая полоска, черная полоска, белая полоска... Много полосок.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
